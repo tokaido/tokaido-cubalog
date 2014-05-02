@@ -1,0 +1,3 @@
+$:.unshift("../")
+require 'tokaido/cubalog'
+

@@ -1,0 +1,37 @@
+.navbar-inner {
+  background-color: #C52F24;
+  background-image: -moz-linear-gradient(top, #C52F24, #BF0200);
+  background-image: -ms-linear-gradient(top, #C52F24, #BF0200);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C52F24), to(#BF0200));
+  background-image: -webkit-linear-gradient(top, #C52F24, #BF0200);
+  background-image: -o-linear-gradient(top, #C52F24, #BF0200);
+  background-image: linear-gradient(top, #C52F24, #BF0200);
+  background-repeat: repeat-x;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C52F24', endColorstr='#BF0200', GradientType=0);
+}
+
+.navbar .brand {
+  color: white;
+}
+
+.navbar .nav>li a {
+  color: white;
+  text-shadow: 0 1px 0 #BF0200;
+}
+
+.navbar .nav>li a:hover {
+  color: white;
+  background-color: #FF1403;
+}
+
+.navbar .nav>.active>a {
+  background-color: #FF1403;
+  color: white;
+}
+
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus {
+  color: white;
+  background-color: #FF1403;
+}

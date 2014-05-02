@@ -1,0 +1,32 @@
+<table class="table table-striped table-bordered table-hover" width="744">
+  <tbody>
+    <tr>
+      <td>
+        <% 
+          begins_with_newlines = true 
+          total_new_lines = 0
+        %>
+
+        <% lines.each do |log| %>
+          <% 
+            if log == "\n" && begins_with_newlines
+              total_new_lines += 1
+              next
+            end
+
+            if total_new_lines == 2
+              if begins_with_newlines
+                begins_with_newlines = false
+              end
+
+              total_new_lines = 0
+              next
+            end
+          %>  
+            
+          <%= log %><br />
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
