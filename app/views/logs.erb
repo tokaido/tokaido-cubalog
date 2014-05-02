@@ -1,0 +1,16 @@
+<table class="table table-striped table-bordered table-hover" width="744">
+  <tbody>
+    <% lines.each do |log| %>
+    <%
+      splits = log.chomp.match(/(?<ip>\d+\.\d+\.\d+\.\d).+(?<emitted>\[.+\]).+\"(?<desc>.+)\".(?<response>\d+).+/)
+      next unless splits
+    %>
+    <tr>
+      <td><%= splits["ip"] %></td>
+      <td><%= splits["emitted"] %></td>
+      <td><%= URI.decode(splits["desc"]) %></td>
+      <td><%= splits["response"] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
