@@ -1,17 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cuba (3.1.1)
+    cuba (3.3.0)
       rack
-    puma (2.8.2)
+    puma (2.10.2)
       rack (>= 1.1, < 2.0)
-    rack (1.5.2)
-    tilt (2.0.1)
+    rack (1.6.0)
+    tilt (1.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  cuba
-  puma
-  tilt
+  cuba (= 3.3.0)
+  puma (~> 2.10.2)
+  tilt (= 1.4.1)
