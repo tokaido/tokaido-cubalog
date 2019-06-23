@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'cuba', '3.3.0'
-gem 'tilt', '1.4.1'
+gem 'cuba', '3.9.2'
+gem 'tilt', '2.0.9'
